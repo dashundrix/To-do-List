@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="todoForm">
+        <p class="title">To-do List</p>
+        <input type="text" id="input_task" name="input_task" placeholder="Input your task">
+        <button type="button" id="add" style="color:white;">ADD</button> <!-- Changed to button type -->
+        
+        <fieldset id="field_task">
+            <legend style="color:white;">TASK</legend>
+        </fieldset><br>
+
+        <fieldset id="completed_task">
+            <legend style="color:white;">COMPLETED TASK</legend>
+        </fieldset>
+    </form>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

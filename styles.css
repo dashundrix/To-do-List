@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    min-height: 800px;
+    background-color: rgb(30, 30, 32);
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    width: 725px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    border: 4px white;
+    text-align: center;
+    font-size: 25pt;
+}
+
+#field_task {
+    width: 700px;
+    height: 300px;
+    border: 2px dashed white;
+    overflow: auto;
+    border-radius: 5px;
+}
+
+#completed_task {
+    width: 700px;
+    height: 200px;
+    border: 2px dashed white;
+    overflow: auto;
+    border-radius: 5px;
+}
+
+#input_task {
+    width: 615px;
+    height: 30px;
+    background-color: rgb(30, 30, 32);
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#input_task:focus {
+    outline: none; 
+    border: 2px solid rgb(114, 114, 197); 
+}
+
+#add {
+    width: 104px;
+    height: 37px;
+    background-color: rgb(55, 55, 58);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#add:hover {
+    background-color: rgb(192, 192, 208);
+}
+
+/* --- Task Item Styling --- */
+.task-item {
+    display: flex;
+    justify-content: space-between; /* Space between the task text and buttons */
+    align-items: center;
+    background-color: rgb(45, 45, 48);
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Container to hold both buttons and align them to the right */
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Right align buttons */
+}
+
+/* Styling for all buttons inside the task item */
+.task-item button {
+    margin-left: 10px; /* Space between Complete and Delete buttons */
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Complete button styling */
+.complete-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.complete-btn:hover {
+    background-color: #45a049;
+}
+
+/* Delete button styling */
+.delete-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #e41d1d;
+}
